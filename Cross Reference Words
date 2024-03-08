@@ -1,0 +1,29 @@
+# Create a function that takes an initial word and extracts any words that start with the same letters as the initial word. Return a list of matching words. 
+
+# Hint: Look at the startswith() method - https://www.w3schools.com/python/ref_string_startswith.asp
+
+# YOUR CODE
+def cross_ref(ini_word, list):
+  match_words = []
+  for word in list:
+    if word.startswith(ini_word):
+      match_words.append(word)
+  return match_words
+
+
+
+
+
+# # Tests (uncomment to run)
+cr1=cross_ref("bu", ["button", "breakfast", "border"]) # ["button"]
+print(cr1)
+
+cr2=cross_ref("tri", ["triplet", "tries", "trip", "piano", "tree"]) # ["triplet", "tries", trip"]
+print(cr2)
+
+cr3=cross_ref("beau", ["pastry", "delicious", "name", "boring"]) # []
+print(cr3)
+
+# Notes
+# If none of the words match, return an empty list.
+# Keep the filtered list in the same relative order as the original list of words.
