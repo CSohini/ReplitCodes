@@ -1,0 +1,26 @@
+# Write a function to check if the sum of two integers, x and y exceeds 100. If the sum exceeds 100, print "Greater". If the sum is less than 100, print "Less". If the sum is equal to 100, print "Equal"
+
+# YOUR CODE
+
+def sum_100(x,y):
+  if x+y > 100:
+    print ("Greater")
+  elif x+y < 100:
+    print ("Less")
+  elif x+y == 100:
+    print ("Equal")
+
+
+# Tests
+a=30
+b=75
+sum_100(a,b)
+
+s=22
+t=72
+sum_100(s,t)
+
+m=40
+n=60
+sum_100(m,n)
+
