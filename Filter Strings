@@ -1,0 +1,28 @@
+# Create a function that takes a list of non-negative integers and strings and return a new list without the strings. Call the function filter_list().
+
+# Requirements
+# Zero is a non-negative integer.
+# The given list only has integers and strings.
+# The original order must be maintained.
+
+def filter_list(lst):
+    new=[]
+    for i in lst:
+      if type(i) == int:
+        new.append(i)
+    return new
+
+
+
+
+
+## Tests (uncomment to run)
+
+f1=filter_list([1, 2, "a", "b"]) # [1, 2]
+print(f1)
+
+f2=filter_list([1, "a", "b", 0, 15]) # [1, 0, 15]
+print(f2)
+
+f3=filter_list([1, 2, "aasf", "1", "123", 123]) # [1, 2, 123]
+print(f3)
