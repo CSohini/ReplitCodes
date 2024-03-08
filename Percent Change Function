@@ -1,0 +1,52 @@
+# This program will check the change in an account balance. Write a function that accepts a start_price and an end_price and returns the percent change using the relationship. Round the final result to the nearest whole number. Print a statement above the return that says: 'The percent change in the account balance is:'
+
+# ((end_price-start_price)/start_price)*100
+
+# start_price and end_price are the parameters ("variables", "placeholder")
+
+# YOUR CODE
+
+def percent_change(start_price, end_price):
+  percent_change = round(((end_price-start_price)/start_price)*100)
+  print ("The percent change in the account balance is:")
+  return percent_change
+  
+
+
+
+
+
+
+
+# Tests
+x=1000
+y=1200
+print(percent_change(x,y))
+# EXPECTED OUTPUT
+# The percent change in the account balance is:
+# 20
+
+a=1200
+b=950
+print(percent_change(a,b))
+# EXPECTED OUTPUT
+# The percent change in the account balance is:
+# -21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
