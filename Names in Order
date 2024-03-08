@@ -1,0 +1,28 @@
+# Create a function that takes a dictionary of student names and returns a list of student names in alphabetical order. Hint: Take a look at the sorted() method https://www.w3schools.com/python/ref_func_sorted.asp
+
+# YOUR CODE
+def get_student_names(dict):
+  student_name = list(dict.values())
+  student_name.sort()
+  return student_name
+
+
+
+
+# # Examples
+g=get_student_names({
+   "Student 1" : "Steve",
+   "Student 2" : "Becky",
+   "Student 3" : "John"
+}) # ➞ ['Becky', 'John', 'Steve']
+
+print(g)
+
+h=get_student_names({
+   "Student 1" : "Edison",
+   "Student 2" : "Sam",
+   "Student 3" : "Jayden",
+   "Student 4" : "Zane"
+ }) # ➞ ['Edison', 'Jayden', 'Sam', 'Zane']
+
+print(h)
