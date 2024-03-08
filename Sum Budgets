@@ -1,0 +1,31 @@
+# Create the function called get_budgets() that takes a list of dictionaries and returns the sum of people's budgets. See the examples below.
+
+# YOUR CODE
+
+def get_budgets(lst):
+  total_b = 0
+  for person in lst:
+    total_b += person["budget"]
+  return total_b
+
+
+# # Examples
+
+# TEST 1
+
+lst1=[
+   { "name": "John", "age": 21, "budget": 23000 },
+   { "name": "Steve",  "age": 32, "budget": 40000 },
+   { "name": "Martin",  "age": 16, "budget": 2700 }
+ ]
+b1=get_budgets(lst1) # ➞ 65700
+print(b1)
+
+# TEST 2
+lst2=[
+   { "name": "John",  "age": 21, "budget": 29000 },
+   { "name": "Steve",  "age": 32, "budget": 32000 },
+   { "name": "Martin",  "age": 16, "budget": 1600 }
+ ]
+b2=get_budgets(lst2) # ➞ 62600
+print(b2)
