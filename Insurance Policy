@@ -1,0 +1,32 @@
+#Suppose your apartment was burglarized.  The insurance guy calls to discuss your policy, which is limited to cover a particular maximum in losses (for example, $50,000). You calculate the bill for the difference you lost.
+
+# Given an dictionary of the stolen items and a limit, return the difference between the total value of those items and the limit of the policy. Name the function calc_diff().
+
+# Your Code
+def calc_diff(d, lim):
+  s=sum(d.values())
+  diff = s-lim
+  print (diff)
+
+
+
+
+# Run the function
+# Test 1
+d1={"skate": 10, "painting": 20, "computer": 899 }
+lim1=900
+calc_diff(d1, lim1) # 29
+
+# Test 2
+d2={"skate": 10, "painting": 20 }
+lim2=19
+calc_diff(d2,lim2) # 11
+
+# Test 3
+d3={"skate": 200, "painting": 200, "shoes": 1 }
+lim3=350
+calc_diff(d3,lim3) # 51
+
+# Notes
+# The dictionary data always contains at least an item (no empty objects).
+# The sum of the items is always greater than the limit.
