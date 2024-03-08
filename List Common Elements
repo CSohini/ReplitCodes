@@ -1,0 +1,44 @@
+# Take two lists and write a function that returns a list that contains only the elements that are common between the lists (without duplicates). Make sure your function works on two lists of different sizes.
+
+# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+# print(common_elements(a,b)) # should output [1,2,3,5,8,13]
+
+# Hints:
+# x=[1,2,3,4]
+# if 4 in x:
+#   print("yes")
+
+# if 5 not in x:
+#   print("no")
+
+
+# # YOUR CODE 
+#def com_list(a,b):
+  #lista=set(a)
+  #listb=set(b)
+  #com_set = lista.intersection(listb)
+  #list_com = list(com_set)
+  #return list_com
+
+def common_list(a,b):
+  c=[]
+  for i in a:
+    if i not in c and i in b:
+      c.append(i)
+  return c
+
+
+# Test 1
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+# print(common_elements(a,b))
+print (common_list(a,b))
+
+# Test 2
+x = ["Apple", "Pear", "Orange", "Peach", "Grapes", "Lemon", "Lime"]
+y = ["Apple", "Tangerine", "Orange", "Strawberries", "Blackberries", "Lemon", "Lime"]
+print (common_list(x,y))
+
+# print(common_elements(x,y)) # should output ["Apple", "Orange", "Lemon", "Lime"]
