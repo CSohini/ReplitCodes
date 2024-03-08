@@ -1,0 +1,22 @@
+# Create a function that takes a string and returns the number (count) of vowels contained within it. Consider the vowels to be a, e, i, o, u.
+
+# Hint
+
+v=['a', 'e', 'i', 'o', 'u','A', 'E', 'I', 'O', 'U']
+x='afternoon'
+
+def count_vowels(x):
+  count_v=0
+  for i in x:
+    if i in v:
+      count_v+=1
+  return count_v
+
+
+
+# # Tests
+print(count_vowels("Celebration")) # ➞ 5
+
+print(count_vowels("Palm")) # ➞ 1
+
+print(count_vowels("Prediction")) # ➞ 4
