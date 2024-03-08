@@ -1,0 +1,32 @@
+# Write a program called palindrome() that asks the user for a string and returns True if the string is a palindrome and False otherwise. (A palindrome is a string that reads the same forwards and backwards.)
+
+# hint: https://www.w3schools.com/python/ref_func_reversed.asp
+
+#CODE 
+
+#rdog = reversed('dog')
+#for i in rdog:
+  #print(i)
+#result = ''.join(rdog)
+#print (result)
+
+def palindrome(word):
+  rword = reversed(word)
+  rword = ''.join(rword)
+  if word==rword:
+    return True
+  else:
+    return False
+
+# # Tests (uncomment to run)
+test1='dog' #output: False
+print(palindrome(test1))
+
+test2='dad' #output: True
+print(palindrome(test2))
+
+test3='saippuakivikauppias' #output: True
+print(palindrome(test3))
+
+test4="it's pretty much my favorite animal" #output: False
+print(palindrome(test4))
