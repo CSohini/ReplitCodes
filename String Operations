@@ -1,0 +1,37 @@
+# 2. Create a function called string_opp() that accepts a string and outputs the first and last character of the string along with the string without the first and last characters. 
+
+# For example, if the function accepts the string s='Good Morning', the output should be ('G', 'g', 'ood Mornin'). 
+
+def string_opp(stg):
+    # a. first and last char.
+  fchar = stg[0]
+  lchar = stg[-1]
+  mchar= stg[1:-1]
+  return fchar, lchar, mchar
+  
+    # b. remove first and last char.
+
+
+    
+s='Good Morning'
+print(string_opp(s)) # ('G','g','ood Mornin')
+
+t='Take a break'
+print(string_opp(t))
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
