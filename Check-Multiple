@@ -1,0 +1,20 @@
+# 1. Write a short function called check_multiple() to check if a number, x, is an integer multiple of another number, y. If yes, output True, if no, output False.
+
+# YOUR CODE
+def check_multiple(x,y):
+  return x%y==0
+
+
+#tests to check if 48,42,50 are divisible by 5 or not
+print(check_multiple(50,5))
+print(check_multiple(48,5))
+print(check_multiple(42,5))
+
+# Tests
+# check if 12898 is an integer multiple of 4.
+
+
+
+
+
+
