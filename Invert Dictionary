@@ -1,0 +1,41 @@
+# Write a function called invert() that will accept a dictionary as an argument and return a dictionary with the keys and values exchanged. The keys should be strings. For example:
+
+d={
+  'a':1,
+  'b':2,
+  'c':3,
+  'd':4
+}
+
+# should become:
+
+{
+  '1':'a',
+  '2':'b',
+  '3':'c',
+  '4':'d'
+}
+
+# Code
+def invert(input_dict):
+  i_d ={}
+  for i, value in input_dict.items():
+    i_d[str(value)] = str(i)
+  return i_d
+
+#if isinstance(i, str):
+  #i_d[value] = i
+#else:
+ # i_d[str(value)] = i
+
+
+# Test
+d={
+  'a':1,
+  'b':2,
+  'c':3,
+  'd':4
+}
+
+id=invert(d)
+print(id)
