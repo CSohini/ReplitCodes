@@ -1,0 +1,19 @@
+# Write a  function called word_reverse() that asks the user for a long string containing multiple words. Print back to the user the same string, except with the words in backwards order. For example, say I type the string:
+
+#   My name is Michele
+# Then I would see the string:
+
+#   Michele is name My
+# shown back to me.
+
+# Hint: Take a look at the "insert method" https://www.w3schools.com/python/ref_list_insert.asp
+
+def word_reverse(word):
+  x=word.split()
+  y=[]
+  for i in x:
+    y.insert(0,i)
+  return ' '.join(y)
+
+a='My name is Michele'
+print (word_reverse(a)) #Michele is name My
